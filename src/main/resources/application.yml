@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: transactions
+  datasource:
+    url: jdbc:postgresql://localhost:5432/transactions
+    username: postgres
+    password: elma
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+transfer:
+  expiresin: 60
+  rediskey: AUTHTRANSFER
+
+redis:
+  host: localhost
